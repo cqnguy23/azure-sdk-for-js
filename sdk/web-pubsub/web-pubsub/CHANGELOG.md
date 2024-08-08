@@ -1,6 +1,12 @@
 # Release History
 
-## 1.1.3 (2024-08-09)
+## 1.1.4 (Unreleased)
+
+### Features Added
+- Added a `clientProtocol` option to `GenerateClientTokenOptions` to specify the type of client protocol when generating token. This option can be used to generate token and client connection URL for a specific client protocol type, such as `Default` or `MQTT`.
+- Update API version to `2024-01-01`
+
+## 1.1.3 (Unreleased)
 
 ### Features Added
 - Added a `messageTtlSeconds` option to `serviceClient.sendToAll`, `serviceClient.sendToUser`, `serviceClient.sendToConnection` and `groupClient.sendToAll`. This option defines the expiration time for a message. Messages that are not consumed by the client within the specified TTL will be dropped by the service. This parameter helps when the client's bandwidth is limited.
